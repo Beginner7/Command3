@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Web.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -29,6 +30,8 @@ namespace ChessClient
             AreaRegistration.RegisterAllAreas();
 
             RegisterRoutes(RouteTable.Routes);
+
+            ValueProviderFactories.Factories.Add(new JsonValueProviderFactory());
         }
     }
 }
