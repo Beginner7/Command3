@@ -20,25 +20,18 @@ namespace ChessClient.Controllers
             byte[] byteArray = Encoding.UTF8.GetBytes(clients);
             Response.OutputStream.Write(byteArray, 0, byteArray.Length); 
         }
+
         [HttpPost]
-        public void Login(LogOnModel user)
+        public JsonResult Login(LogOnModel user)
         {
             if (ModelState.IsValid)
             {
-                Response.ContentType = "plain/text";
-                Response.ContentEncoding = Encoding.UTF8;
-                string clients = "param:'success'";
-                byte[] byteArray = Encoding.UTF8.GetBytes(clients);
-                Response.OutputStream.Write(byteArray, 0, byteArray.Length);
+
+
+
+                return Json(new TestModels { Foo = "trololo" });//new { Result = "Success" });
             }
+            return Json(new { Result = "Dada validation error" });
         }
     }
 }
-
-// Content-Type: application/x-www-form-urlencoded
-
-//{
-//UserName : 'Иванов',
-//Password : '123456',
-//RememberMe : true
-//}
