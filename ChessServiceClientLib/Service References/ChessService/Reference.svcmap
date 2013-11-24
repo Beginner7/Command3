@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="48794240-71da-4e1e-b30a-cca29451d0d3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:47703/ChessService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ChessServiceImpl.wsdl" MetadataType="Wsdl" ID="7db6f096-483f-438b-ad14-7e83d2c22bc5" SourceId="1" SourceUrl="http://localhost:47703/ChessService.svc?wsdl" />
+    <MetadataFile FileName="ChessService.xsd" MetadataType="Schema" ID="292cee94-369f-4500-a706-b44b1e8336b6" SourceId="1" SourceUrl="http://localhost:47703/ChessService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ChessService1.xsd" MetadataType="Schema" ID="a6ffe4e9-6697-4a2e-9277-641f222b0817" SourceId="1" SourceUrl="http://localhost:47703/ChessService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ChessService.disco" MetadataType="Disco" ID="8d2fdcf7-555e-4e03-9369-50acdf8d23b9" SourceId="1" SourceUrl="http://localhost:47703/ChessService.svc?disco" />
+    <MetadataFile FileName="ChessService2.xsd" MetadataType="Schema" ID="0e9b99ba-71e1-4942-86d5-1531797f3b56" SourceId="1" SourceUrl="http://localhost:47703/ChessService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
