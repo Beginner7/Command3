@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,31 +11,28 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace PlayChess
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for LoginWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class LoginWindow : Window
     {
-        public MainWindow()
+        public LoginWindow()
         {
             InitializeComponent();            
         }
 
-        private void SignUpButton(object sender, RoutedEventArgs e)
+        private void LoginButton(object sender, RoutedEventArgs e)
         {
-            RegisterNewGamerWindow registerWindow = new RegisterNewGamerWindow();
-            registerWindow.ShowDialog();
+            MessageBox.Show("пользователь авторизован");
         }
 
-        private void SignInButton(object sender, RoutedEventArgs e)
+        private void CanselButton(object sender, RoutedEventArgs e)
         {
-            LoginWindow loginWindow = new LoginWindow();
-            loginWindow.ShowDialog();
+            this.Close();
         }
     }
 }
