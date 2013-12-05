@@ -22,7 +22,8 @@ namespace PlayChess
     {
         public MainWindow()
         {
-            InitializeComponent();            
+            InitializeComponent();  
+            
         }
 
         private void SignUpButton(object sender, RoutedEventArgs e)

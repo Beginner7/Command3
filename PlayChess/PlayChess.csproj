@@ -36,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -53,9 +54,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BoardControl.xaml.cs">
+      <DependentUpon>BoardControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="RegisterNewGamerWindow.xaml.cs">
       <DependentUpon>RegisterNewGamerWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="BoardControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="LoginWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -84,11 +97,6 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -96,6 +104,7 @@
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -112,6 +121,42 @@
       <Project>{7a7915c9-cf4f-456d-b9b1-f006bd77b23e}</Project>
       <Name>ChessEngine</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black B.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black K.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black N.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black P.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black Q.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black R.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White B.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White K.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White N.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White P.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White Q.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White R.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
