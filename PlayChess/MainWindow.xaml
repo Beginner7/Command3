@@ -2,11 +2,23 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:PlayChess"
-        Title="MainWindow" Height="350" Width="525" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+        Title="MainWindow" Height="447" Width="549" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid>
-        <Button Content="Sign In" Click="SignInButton" HorizontalAlignment="Left" Margin="434,272,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Sign Up" Click="SignUpButton" HorizontalAlignment="Left" Margin="434,245,0,0" VerticalAlignment="Top" Width="75"/>
-        <Viewbox HorizontalAlignment="Left" Height="300" Margin="10,12,0,0" VerticalAlignment="Top" Width="300">
+        <Menu Name="MainMenu" Height="24" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <MenuItem Header="User">
+                <MenuItem Header="Sign Up" Click="SignUpButton"/>
+                <MenuItem Header="Sign In" Click="SignInButton"/>
+                <MenuItem Header="Manage service" />         
+            </MenuItem>
+            <MenuItem Header="Game">
+                <MenuItem Header="New game" />
+                <MenuItem Header="List of games"  />                
+            </MenuItem>
+            <MenuItem Header="Help">
+               
+            </MenuItem>            
+        </Menu>    
+        <Viewbox HorizontalAlignment="Left" Height="300" Margin="10,52,0,0" VerticalAlignment="Top" Width="300">
             <local:BoardControl/>
         </Viewbox>
     </Grid>

@@ -1,16 +1,17 @@
 ﻿<Window x:Class="PlayChess.LoginWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="LoginWindow" Height="274.895" Width="350.209" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+        Title="LoginWindow" Height="274.895" Width="420.209" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid>
         <Label Content="Login" HorizontalAlignment="Left" Margin="53,38,0,0" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="157,41,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Password" HorizontalAlignment="Left" Margin="53,89,0,0" VerticalAlignment="Top"/>
-        <Label Content="URL" HorizontalAlignment="Left" Margin="53,137,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="157,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="157,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Server" HorizontalAlignment="Left" Margin="53,137,0,0" VerticalAlignment="Top"/>
         <Button Content="Login" Click="LoginButton" HorizontalAlignment="Left" Margin="202,187,0,0" VerticalAlignment="Top" Width="75"/>
         <Button Content="Cancel" Click="CanselButton" HorizontalAlignment="Left" Margin="53,187,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Manage service" HorizontalAlignment="Left" Margin="300,140,0,0" VerticalAlignment="Top" Width="101"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="157,95,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="157,141,0,0" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
